@@ -1,0 +1,20 @@
+body{
+	margin: 0px;
+    background-color: rgb(252, 244, 244);
+}
+.menu{
+    text-align:center; 
+    margin-top:50px;
+    
+}
+.menu li {
+    display:inline;
+    padding-right:40px;
+}
+a{
+    padding:10px;
+    text-decoration:none;
+}
+.menu a:hover{
+border-top:3px solid black;
+}
