@@ -52,7 +52,7 @@ class TestOne_Custom_Widget extends WP_Widget
     {
         // front-end layout
         
-        $title = apply_filters("widget_title", $instance['text_title']);// filter hook to add the content param 2 is value to be echo
+        $title = apply_filters("widget_title", $instance['text_title']);// filter hook to add the content
 
         echo $args['before_title'];
         if ( !empty( $instance['text_title'] ) ) {

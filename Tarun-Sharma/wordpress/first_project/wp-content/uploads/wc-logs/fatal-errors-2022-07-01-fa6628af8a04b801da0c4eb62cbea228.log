@@ -1,0 +1,24 @@
+2022-07-01T06:19:31+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/template-parts/content-blog-carousel.php:71
+Stack trace:
+#0 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/template.php(772): require()
+#1 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/template.php(716): load_template()
+#2 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/general-template.php(204): locate_template()
+#3 /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/front-page.php(7): get_template_part()
+#4 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/template-loader.php(106): include('/var/www/html/n...')
+#5 /var/www/html/new_22/tarun/wordpress/first_project/wp-blog-header.php(19): require_once('/var/www/html/n...')
+#6 /var/www/html/new_22/tarun/wordpress/first_project/index.php(17): require('/var/www/html/n...')
+#7 {main}
+  thrown in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/template-parts/content-blog-carousel.php on line 71
+
+2022-07-01T06:19:50+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/template-parts/content-blog-carousel.php:71
+Stack trace:
+#0 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/template.php(772): require()
+#1 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/template.php(716): load_template()
+#2 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/general-template.php(204): locate_template()
+#3 /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/front-page.php(7): get_template_part()
+#4 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/template-loader.php(106): include('/var/www/html/n...')
+#5 /var/www/html/new_22/tarun/wordpress/first_project/wp-blog-header.php(19): require_once('/var/www/html/n...')
+#6 /var/www/html/new_22/tarun/wordpress/first_project/index.php(17): require('/var/www/html/n...')
+#7 {main}
+  thrown in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/template-parts/content-blog-carousel.php on line 71
+

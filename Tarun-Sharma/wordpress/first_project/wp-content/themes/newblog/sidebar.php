@@ -19,12 +19,12 @@
                     <div class="content">
                         <ul>
                             <?php 
-                            if( is_archive("shop") || is_singular("product") ) {
+                            if( is_archive("shop") || is_singular("product") ) {                            
                                 if ( ('new-blog-product')) { 
                                     dynamic_sidebar('new-blog-product');
                                 }
                             } else {
-                                if ( ('new-blog-sidebar-2')) {
+                                if ( ('new-blog-sidebar-2')) { 
                                     dynamic_sidebar('new-blog-sidebar-2');
                                 }
                             }

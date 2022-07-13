@@ -1,5 +1,11 @@
 <?php
 get_header();
+// $categories = get_the_category();
+// $category_id = $categories[0]->cat_ID;
+// echo $category_id;
+// $echo the_ID();
+// die;
+
 ?>
 <div class="archive-meta" itemprop="description">
     <?php if ('' != get_the_archive_description()) {

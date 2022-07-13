@@ -119,6 +119,7 @@ add_action("widgets_init", "custom_side_bar_new_blog");
 add_theme_support('post-thumbnails'); // function to show featured image 
 add_theme_support('widgets'); // function to widgets area
 add_theme_support( 'woocommerce' ); // for support woo-commerce
+add_theme_support( 'elementor' ); // for support woo-commerce
 
 add_image_size('list-thumb', 720, 320, array('center', 'center')); // Hard Crop Mode
 add_image_size('featured-thumb', 436, 378, array('center', 'center')); // Soft Crop Mode
@@ -399,15 +400,46 @@ function wpex_woo_shop_columns( $columns ) {
 }
 add_filter( 'loop_shop_columns', 'wpex_woo_shop_columns' );
 
-// add_filter( 'nav_menu_link_attributes', function($atts) {
-//     $atts['class'] = "nav-link";
-//     return $atts;
-// }, 100, 1 );
-
 add_filter( "nav_menu_link_attributes", "simple_bootstrap_theme_add_anchor_links",1,3 );
 function simple_bootstrap_theme_add_anchor_links( $classes, $item, $args ) {
     $classes['class'] = 'nav-link';
     return $classes;
 }
 
+
+/**
+ * action hooks to add custom rewrite rules
+ */
+function wp_foo_rewrite_rule() {
+    add_rewrite_rule(
+        'custom-template/([a-z0-9-]+)[/]?$',
+        'index.php?custom-page=$matches[1]&custom-post=$matches[2]',
+        'top'
+    );
+    // flush_rewrite_rules();
+}
+add_action( 'init', 'wp_foo_rewrite_rule' );
+
+function custom_query_var( $vars ) {
+    $vars[] = 'custom-page';
+    $vars[] = 'custom-post';   
+    return $vars;
+}
+add_filter('query_vars', 'custom_query_var');
+
+add_action( 'template_include', function( $template ) {
+
+    if ( get_query_var( 'custom-page' ) == false || get_query_var( 'custom-page' ) == '' ) {
+        return $template;
+    }    
+    return get_template_directory() . '/template-parts/custom-page.php';
+
+    // if ( get_query_var( 'custom-post' ) == true ) {
+    //     echo 'ok custom post';
+    // } else {
+    //     return get_template_directory() . '/template-parts/custom-post.php';
+    // }
+} );
+
+/* end of rewrite code */
 ?>

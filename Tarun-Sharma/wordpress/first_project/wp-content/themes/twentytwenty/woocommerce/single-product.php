@@ -38,15 +38,15 @@ get_header( 'shop' ); ?>
 			<p>
 				here i am
 				<?php
-					// function global_test() {
-					// 	global $woocommerce;
-					// 	global $product_id;
-					// 	echo "<pre>";
-					// 	print_r($woocommerce->countries->get_states('IN'));
-					// 	echo "</pre>";
-					// }
-					// add_action("call_function", "global_test");
-					// do_action("call_function");
+					function global_test() {
+						global $woocommerce;
+						global $product_id;
+						echo "<pre>";
+						print_r($woocommerce->countries->get_states('IN'));
+						echo "</pre>";
+					}
+					add_action("call_function", "global_test");
+					do_action("call_function");
 				?>
 			</p>
 		<?php endwhile; // end of the loop. ?>

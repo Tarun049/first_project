@@ -1,11 +1,12 @@
-	<?php if (is_front_page() || is_home() || is_front_page() && is_home() || is_archive() || is_search() || have_posts()) {
+	
+	<?php	if  ( is_front_page() || is_home() || is_front_page() && is_home() || is_archive() || is_search() || have_posts() ) {
 		if (is_active_sidebar('custom-sidebar-1')) { ?>
-			<div id="custom-sidebar-1">
-				<?php dynamic_sidebar('custom-sidebar-1'); ?>
-			</div>
+		<div id="custom-sidebar-1">
+			<?php dynamic_sidebar('custom-sidebar-1'); ?>
+		</div>
 	<?php
-		}
-	} ?>
+		} 
+			} ?>
 	<?php wp_footer();
 	// the_widget("TestOne_Custom_Widget");
 	?>
@@ -100,7 +101,7 @@
 			</div>
 		</div>
 	</div>
-	</div>
-	</body>
+</div>
+</body>
 
-	</html>
+</html>
