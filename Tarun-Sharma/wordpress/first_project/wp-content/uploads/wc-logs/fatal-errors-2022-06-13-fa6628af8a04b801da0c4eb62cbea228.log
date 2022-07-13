@@ -1,6 +1,0 @@
-2022-06-13T10:57:39+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore::get_attribute_taxonomies() must be an instance of WC_Product, bool given, called in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php on line 444 and defined in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php:582
-Stack trace:
-#0 /var/www/html/new_22/tarun/wordpress/first_project/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(444): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->get_attribute_taxonomies()
-#1 /var/www/html/new_22/tarun/wordpress/first_project/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(349): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->create_data_for_variation()
-#2 /var in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php on line 582
-

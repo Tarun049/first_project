@@ -1,1 +1,0 @@
-alert("wp_enqueue script runs successfully!!");

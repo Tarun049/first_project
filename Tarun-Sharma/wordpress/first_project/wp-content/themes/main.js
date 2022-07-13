@@ -1,1 +1,0 @@
-alert("Hook (Post_Publish) Runs Succesfuly!");

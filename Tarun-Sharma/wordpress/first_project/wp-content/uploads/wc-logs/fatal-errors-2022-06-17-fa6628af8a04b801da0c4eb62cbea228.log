@@ -1,4 +1,0 @@
-2022-06-17T08:50:31+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/twentytwenty/functions.php on line 1052
-
-2022-06-17T11:46:12+00:00 CRITICAL syntax error, unexpected ')' in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/header.php on line 19
-
