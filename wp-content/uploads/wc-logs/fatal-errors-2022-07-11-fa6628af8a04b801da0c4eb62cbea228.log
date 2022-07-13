@@ -1,0 +1,26 @@
+2022-07-11T05:23:49+00:00 CRITICAL syntax error, unexpected ':' in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/functions.php on line 431
+
+2022-07-11T05:24:07+00:00 CRITICAL syntax error, unexpected ':' in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/functions.php on line 431
+
+2022-07-11T05:24:14+00:00 CRITICAL syntax error, unexpected ':' in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/functions.php on line 431
+
+2022-07-11T10:04:48+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function {closure}(), 1 passed in /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/class-wp-hook.php on line 307 and exactly 2 expected in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/functions.php:429
+Stack trace:
+#0 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/class-wp-hook.php(307): {closure}()
+#1 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/plugin.php(191): WP_Hook->apply_filters()
+#2 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/template-loader.php(104): apply_filters()
+#3 /var/www/html/new_22/tarun/wordpress/first_project/wp-blog-header.php(19): require_once('/var/www/html/n...')
+#4 /var/www/html/new_22/tarun/wordpress/first_project/index.php(17): require('/var/www/html/n...')
+#5 {main}
+  thrown in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/functions.php on line 429
+
+2022-07-11T10:05:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function {closure}(), 1 passed in /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/class-wp-hook.php on line 307 and exactly 2 expected in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/functions.php:429
+Stack trace:
+#0 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/class-wp-hook.php(307): {closure}()
+#1 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/plugin.php(191): WP_Hook->apply_filters()
+#2 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/template-loader.php(104): apply_filters()
+#3 /var/www/html/new_22/tarun/wordpress/first_project/wp-blog-header.php(19): require_once('/var/www/html/n...')
+#4 /var/www/html/new_22/tarun/wordpress/first_project/index.php(17): require('/var/www/html/n...')
+#5 {main}
+  thrown in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/newblog/functions.php on line 429
+

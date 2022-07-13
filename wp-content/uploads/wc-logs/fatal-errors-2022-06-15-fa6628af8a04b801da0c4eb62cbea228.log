@@ -1,0 +1,24 @@
+2022-06-15T13:00:00+00:00 CRITICAL Uncaught Error: Call to a member function get_total() on null in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/twentytwenty/woocommerce/single-product.php:44
+Stack trace:
+#0 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/class-wp-hook.php(307): global_test()
+#1 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters()
+#2 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/plugin.php(476): WP_Hook->do_action()
+#3 /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/twentytwenty/woocommerce/single-product.php(48): do_action()
+#4 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/template-loader.php(106): include('/var/www/html/n...')
+#5 /var/www/html/new_22/tarun/wordpress/first_project/wp-blog-header.php(19): require_once('/var/www/html/n...')
+#6 /var/www/html/new_22/tarun/wordpress/first_project/index.php(17): require('/var/www/html/n...')
+#7 {main}
+  thrown in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/twentytwenty/woocommerce/single-product.php on line 44
+
+2022-06-15T13:02:52+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Countries::get_coutnries() in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/twentytwenty/woocommerce/single-product.php:44
+Stack trace:
+#0 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/class-wp-hook.php(307): global_test()
+#1 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters()
+#2 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/plugin.php(476): WP_Hook->do_action()
+#3 /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/twentytwenty/woocommerce/single-product.php(48): do_action()
+#4 /var/www/html/new_22/tarun/wordpress/first_project/wp-includes/template-loader.php(106): include('/var/www/html/n...')
+#5 /var/www/html/new_22/tarun/wordpress/first_project/wp-blog-header.php(19): require_once('/var/www/html/n...')
+#6 /var/www/html/new_22/tarun/wordpress/first_project/index.php(17): require('/var/www/html/n...')
+#7 {main}
+  thrown in /var/www/html/new_22/tarun/wordpress/first_project/wp-content/themes/twentytwenty/woocommerce/single-product.php on line 44
+
